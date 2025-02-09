@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "version": "1.0.0",
+    "name": "Background Color Changer",
+    "description": "A Chrome extension to change webpage background color",
+    "permissions": ["scripting", "tabs","storage"],
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+    ],
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": {
+        "48": "icon.png"
+      }
+    },
+   
+    "icons": {
+      "48": "icon.png",
+      "128": "icons.png"
+    }
+  }
+  
