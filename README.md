@@ -95,6 +95,3 @@ npm run build
 ## 📩 Contact  
 For any issues, feel free to raise a **GitHub issue** or reach out! 🚀  
 
----
-
-This README provides **clear instructions, tech details, and project setup steps**. Let me know if you want any modifications! 🚀
