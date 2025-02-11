@@ -1,6 +1,3 @@
-Here’s a structured **README.md** for your Chrome extension project:  
-
----
 
 ### # 🌈 React Chrome Extension - Background Changer  
 
@@ -55,7 +52,7 @@ npm run build
 
 ## 📸 Screenshots  
 
-(Add relevant screenshots here)  
+![Extension Preview](assets/screenshot.png) 
 
 ---
 
