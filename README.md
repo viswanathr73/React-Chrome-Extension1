@@ -1,50 +1,100 @@
-# React + TypeScript + Vite
+Here’s a structured **README.md** for your Chrome extension project:  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+### # 🌈 React Chrome Extension - Background Changer  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A **Chrome Extension** built with **React & TypeScript** that allows users to dynamically change webpage background colors. It utilizes the **Chrome Storage API** for saving preferences and the **Chrome Scripting API** to modify active tab content.  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🚀 Features  
 
-- Configure the top-level `parserOptions` property like this:
+✅ **Change Background Color** – Set a custom background color for any webpage.  
+✅ **Random Color Generator** – Generate and apply random colors instantly.  
+✅ **Persistent Storage** – Saves user preferences using **Chrome Storage API**.  
+✅ **Modern UI** – Built with **React, TypeScript, and Lucide Icons**.  
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 🛠️ Tech Stack  
+
+- **React (Vite) + TypeScript**  
+- **Chrome Extensions (Manifest V3)**  
+- **Chrome Storage API**  
+- **Chrome Scripting API**  
+- **Lucide-react (Icons)**  
+
+---
+
+## 📂 Project Setup  
+
+### 1️⃣ Clone the Repository  
+```bash
+git clone https://github.com/viswanathr73/React-Chrome-Extension1.git
+cd React-Chrome-Extension1
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### 2️⃣ Install Dependencies  
+```bash
+npm install
 ```
+
+### 3️⃣ Build the Extension  
+```bash
+npm run build
+```
+
+### 4️⃣ Load in Chrome  
+1. Open **Google Chrome** and go to `chrome://extensions/`.  
+2. Enable **Developer Mode** (toggle at the top right).  
+3. Click **Load Unpacked** and select the `dist/` folder inside the project.  
+4. The extension is now installed! 🎉  
+
+---
+
+## 📸 Screenshots  
+
+(Add relevant screenshots here)  
+
+---
+
+## 📜 Manifest.json  
+
+```json
+{
+  "manifest_version": 3,
+  "name": "Background Changer",
+  "version": "1.0",
+  "description": "Change webpage background colors with ease.",
+  "permissions": ["storage", "scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  }
+}
+```
+
+---
+
+## 🔗 GitHub Repository  
+
+📌 **[Clone the Repo](https://github.com/viswanathr73/React-Chrome-Extension1.git)**  
+
+---
+
+## 🛠️ Future Improvements  
+🔹 Add support for more UI customization (e.g., gradients, themes).  
+🔹 Implement user-defined color presets.  
+🔹 Publish on the **Chrome Web Store**.  
+
+---
+
+## 📩 Contact  
+For any issues, feel free to raise a **GitHub issue** or reach out! 🚀  
+
+---
+
+This README provides **clear instructions, tech details, and project setup steps**. Let me know if you want any modifications! 🚀
